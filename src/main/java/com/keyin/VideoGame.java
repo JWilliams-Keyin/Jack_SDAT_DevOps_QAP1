@@ -12,17 +12,15 @@ public class VideoGame {
     public String gameDeveloper;
     public LocalDate gameReleaseDate;
     public double gamePrice;
-    public ArrayList<String>[] gamePlatforms;
     public ArrayList<String>[] gameGenres;
 
     // Constructor
 
-    public VideoGame(String gameTitle, String gameDeveloper, LocalDate gameReleaseDate, double gamePrice, ArrayList<String>[] gamePlatforms, ArrayList<String>[] gameGenres){
+    public VideoGame(String gameTitle, String gameDeveloper, LocalDate gameReleaseDate, double gamePrice, ArrayList<String>[] gameGenres){
         this.gameTitle = gameTitle;
         this.gameDeveloper = gameDeveloper;
         this.gameReleaseDate = gameReleaseDate;
         this.gamePrice = gamePrice;
-        this.gamePlatforms = gamePlatforms;
         this.gameGenres = gameGenres;
     }
 
@@ -45,10 +43,6 @@ public class VideoGame {
         return gamePrice;
     }
 
-    public String getGamePlatforms() {
-        return Arrays.deepToString(gamePlatforms);
-    }
-
     public String getGameGenres() {
         return Arrays.deepToString(gameGenres);
     }
@@ -69,10 +63,6 @@ public class VideoGame {
         this.gamePrice = gamePrice;
     }
 
-    public void setGamePlatforms(ArrayList<String>[] gamePlatforms) {
-        this.gamePlatforms = gamePlatforms;
-    }
-
     public void setGameGenres(ArrayList<String>[] gameGenres) {
         this.gameGenres = gameGenres;
     }
@@ -84,7 +74,6 @@ public class VideoGame {
                 gameDeveloper + '\'' +
                 gameReleaseDate + '\'' +
                 gamePrice + '\'' +
-                getGamePlatforms() + '\'' +
                 getGameGenres();
     }
 }
