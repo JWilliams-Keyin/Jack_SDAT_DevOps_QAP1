@@ -76,4 +76,15 @@ public class VideoGame {
     public void setGameGenres(ArrayList<String>[] gameGenres) {
         this.gameGenres = gameGenres;
     }
+
+    // Methods
+
+    public String toString() {
+        return gameTitle + '\'' +
+                gameDeveloper + '\'' +
+                gameReleaseDate + '\'' +
+                gamePrice + '\'' +
+                getGamePlatforms() + '\'' +
+                getGameGenres();
+    }
 }
