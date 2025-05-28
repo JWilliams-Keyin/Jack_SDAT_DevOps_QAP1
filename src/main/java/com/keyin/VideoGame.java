@@ -71,9 +71,9 @@ public class VideoGame {
 
     public String toString() {
         return gameTitle + '\'' +
-                gameDeveloper + '\'' +
-                gameReleaseDate + '\'' +
-                gamePrice + '\'' +
-                getGameGenres();
+                "Developer: " + gameDeveloper + '\'' +
+                "Release Date: " + gameReleaseDate + '\'' +
+                "Price: " + gamePrice + '\'' +
+                "Genres: " + getGameGenres();
     }
 }
