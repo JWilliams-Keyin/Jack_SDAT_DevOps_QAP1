@@ -15,6 +15,12 @@ public class Cart {
         this.gamesInCart = new ArrayList<>();
     }
 
+    // Getter
+
+    public ArrayList<VideoGame> getGamesInCart() {
+        return gamesInCart;
+    }
+
     // Methods
 
     public void addToCart(VideoGame videoGame){
