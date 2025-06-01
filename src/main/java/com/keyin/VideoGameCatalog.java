@@ -1,6 +1,7 @@
 package com.keyin;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class VideoGameCatalog {
 
@@ -34,6 +35,23 @@ public class VideoGameCatalog {
         availableGames.add(game8);
         availableGames.add(game9);
         availableGames.add(game10);
+    }
 
+    // Getter
+
+    public ArrayList<VideoGame> getAvailableGames() {
+        return availableGames;
+    }
+
+    // Methods
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (VideoGame videoGame : availableGames) {
+            stringBuilder.append(videoGame.toString()).append("\n");
+        }
+
+        return stringBuilder.toString();
     }
 }
