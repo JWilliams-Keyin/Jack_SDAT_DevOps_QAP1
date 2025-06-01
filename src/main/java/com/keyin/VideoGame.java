@@ -1,9 +1,5 @@
 package com.keyin;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class VideoGame {
 
     // Attributes
