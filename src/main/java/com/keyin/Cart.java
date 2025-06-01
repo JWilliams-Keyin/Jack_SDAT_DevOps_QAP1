@@ -1,7 +1,6 @@
 package com.keyin;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Cart {
 
@@ -29,5 +28,17 @@ public class Cart {
 
     public void removeFromCart(VideoGame videoGame) {
         gamesInCart.remove(videoGame);
+    }
+
+    public double getTotalPrice() {
+        double totalPrice = 0;
+
+        for (int i = 0; i < gamesInCart.size(); i++) {
+            VideoGame nextVideoGame = gamesInCart.get(i);
+            double gamePrice = nextVideoGame.getGamePrice();
+            totalPrice += gamePrice;
+        }
+
+        return totalPrice;
     }
 }
