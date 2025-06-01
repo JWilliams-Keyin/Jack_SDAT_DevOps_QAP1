@@ -25,4 +25,18 @@ public class Purchase {
     public double getTotalPrice() {
         return totalPrice;
     }
+
+    // Methods
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (ArrayList<VideoGame> videoGame : gamesInCart) {
+            stringBuilder.append(videoGame.toString()).append("\n");
+        }
+
+        return "Your Purchase:" + "\n" +
+                stringBuilder.toString() + "\n" +
+                "Total Price: " + totalPrice;
+    }
 }
