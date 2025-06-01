@@ -70,10 +70,10 @@ public class VideoGame {
     // Methods
 
     public String toString() {
-        return gameTitle + '\'' +
-                "Developer: " + gameDeveloper + '\'' +
-                "Release Date: " + gameReleaseDate + '\'' +
-                "Price: " + gamePrice + '\'' +
-                "Genres: " + gameGenre;
+        return gameTitle + " " +
+                "(" + "Developer: " + gameDeveloper + ")" + " "  +
+                "(" + "Release Date: " + gameReleaseDate + ")" + " " +
+                "(" + "Price: " + gamePrice + ")" + " " +
+                "(" + "Genres: " + gameGenre + ")";
     }
 }
