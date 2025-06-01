@@ -26,4 +26,8 @@ public class Cart {
     public void addToCart(VideoGame videoGame){
         gamesInCart.add(videoGame);
     }
+
+    public void removeFromCart(VideoGame videoGame) {
+        gamesInCart.remove(videoGame);
+    }
 }
