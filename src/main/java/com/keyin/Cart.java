@@ -41,4 +41,8 @@ public class Cart {
 
         return totalPrice;
     }
+
+    public String toString() {
+        return gamesInCart.toString();
+    }
 }
