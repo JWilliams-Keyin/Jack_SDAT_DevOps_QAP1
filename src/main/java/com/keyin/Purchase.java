@@ -31,7 +31,8 @@ public class Purchase {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        for (VideoGame videoGame : gamesInCart) {
+        for (int i = 0; i < gamesInCart.size(); i++) {
+            VideoGame videoGame = gamesInCart.get(i);
             stringBuilder.append(videoGame.toString()).append("\n");
         }
 
