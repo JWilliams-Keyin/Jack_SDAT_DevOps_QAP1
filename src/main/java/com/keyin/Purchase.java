@@ -6,19 +6,19 @@ public class Purchase {
 
     // Attributes
 
-    ArrayList<VideoGame>[] gamesInCart;
+    ArrayList<VideoGame> gamesInCart;
     double totalPrice;
 
     // Constructor
 
-    public Purchase(ArrayList<VideoGame>[] gamesInCart, double totalPrice) {
+    public Purchase(ArrayList<VideoGame> gamesInCart, double totalPrice) {
         this.gamesInCart = gamesInCart;
         this.totalPrice = totalPrice;
     }
 
     // Getters
 
-    public ArrayList<VideoGame>[] getGamesInCart() {
+    public ArrayList<VideoGame> getGamesInCart() {
         return gamesInCart;
     }
 
@@ -31,7 +31,7 @@ public class Purchase {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        for (ArrayList<VideoGame> videoGame : gamesInCart) {
+        for (VideoGame videoGame : gamesInCart) {
             stringBuilder.append(videoGame.toString()).append("\n");
         }
 
