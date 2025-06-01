@@ -10,18 +10,18 @@ public class VideoGame {
 
     public String gameTitle;
     public String gameDeveloper;
-    public LocalDate gameReleaseDate;
+    public String gameReleaseDate;
     public double gamePrice;
-    public ArrayList<String>[] gameGenres;
+    public String gameGenre;
 
     // Constructor
 
-    public VideoGame(String gameTitle, String gameDeveloper, LocalDate gameReleaseDate, double gamePrice, ArrayList<String>[] gameGenres){
+    public VideoGame(String gameTitle, String gameDeveloper, String gameReleaseDate, double gamePrice, String gameGenre){
         this.gameTitle = gameTitle;
         this.gameDeveloper = gameDeveloper;
         this.gameReleaseDate = gameReleaseDate;
         this.gamePrice = gamePrice;
-        this.gameGenres = gameGenres;
+        this.gameGenre = gameGenre;
     }
 
     // Getters & Setters
@@ -35,7 +35,7 @@ public class VideoGame {
         return gameDeveloper;
     }
 
-    public LocalDate getGameReleaseDate() {
+    public String getGameReleaseDate() {
         return gameReleaseDate;
     }
 
@@ -43,8 +43,8 @@ public class VideoGame {
         return gamePrice;
     }
 
-    public String getGameGenres() {
-        return Arrays.deepToString(gameGenres);
+    public String getGameGenre() {
+        return gameGenre;
     }
 
     public void setGameTitle(String gameTitle) {
@@ -55,7 +55,7 @@ public class VideoGame {
         this.gameDeveloper = gameDeveloper;
     }
 
-    public void setGameReleaseDate(LocalDate gameReleaseDate) {
+    public void setGameReleaseDate(String gameReleaseDate) {
         this.gameReleaseDate = gameReleaseDate;
     }
 
@@ -63,8 +63,8 @@ public class VideoGame {
         this.gamePrice = gamePrice;
     }
 
-    public void setGameGenres(ArrayList<String>[] gameGenres) {
-        this.gameGenres = gameGenres;
+    public void setGameGenre(String gameGenres) {
+        this.gameGenre = gameGenres;
     }
 
     // Methods
@@ -74,6 +74,6 @@ public class VideoGame {
                 "Developer: " + gameDeveloper + '\'' +
                 "Release Date: " + gameReleaseDate + '\'' +
                 "Price: " + gamePrice + '\'' +
-                "Genres: " + getGameGenres();
+                "Genres: " + gameGenre;
     }
 }
