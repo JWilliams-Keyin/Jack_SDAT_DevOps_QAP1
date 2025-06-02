@@ -45,6 +45,13 @@ public class Cart {
     }
 
     public String toString() {
-        return gamesInCart.toString();
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int i = 0; i < gamesInCart.size(); i++) {
+            VideoGame videoGame = gamesInCart.get(i);
+            stringBuilder.append(videoGame.toString()).append("\n");
+        }
+
+        return stringBuilder.toString();
     }
 }
