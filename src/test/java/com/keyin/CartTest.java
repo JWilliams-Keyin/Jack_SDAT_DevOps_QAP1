@@ -34,4 +34,20 @@ public class CartTest {
         assertNotEquals(0, cart2.gamesInCart.size());
         assertNotEquals(2, cart2.gamesInCart.size());
     }
+
+    @Test
+    public void testTotalPriceCalculation() {
+        Cart cart3 = new Cart();
+
+        VideoGame newGame3 = new VideoGame("TestGame3", "TestDev", "TestDate3", 45.44, "TestGenre3");
+        VideoGame newGame4 = new VideoGame("TestGame4", "TestDev", "TestDate4", 32.55, "TestGenre4");
+
+        cart3.addToCart(newGame3);
+        cart3.addToCart(newGame4);
+
+        assertEquals(77.99, cart3.getTotalPrice());
+        assertNotEquals(0, cart3.getTotalPrice());
+        assertNotEquals(45.44, cart3.getTotalPrice());
+        assertNotEquals(32.55, cart3.getTotalPrice());
+    }
 }
