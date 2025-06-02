@@ -47,7 +47,8 @@ public class VideoGameCatalog {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        for (VideoGame videoGame : availableGames) {
+        for (int i = 0; i < availableGames.size(); i++) {
+            VideoGame videoGame = availableGames.get(i);
             stringBuilder.append(videoGame.toString()).append("\n");
         }
 
