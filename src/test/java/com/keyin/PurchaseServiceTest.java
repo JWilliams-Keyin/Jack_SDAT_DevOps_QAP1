@@ -1,5 +1,9 @@
 package com.keyin;
 
+import com.keyin.models.Cart;
+import com.keyin.models.Purchase;
+import com.keyin.models.VideoGame;
+import com.keyin.services.PurchaseService;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

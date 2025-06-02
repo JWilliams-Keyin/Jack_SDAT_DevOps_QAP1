@@ -1,4 +1,8 @@
-package com.keyin;
+package com.keyin.services;
+
+import com.keyin.models.Cart;
+import com.keyin.models.Purchase;
+import com.keyin.models.VideoGame;
 
 import java.util.ArrayList;
 

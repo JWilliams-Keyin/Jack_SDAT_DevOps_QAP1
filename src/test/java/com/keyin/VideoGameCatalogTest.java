@@ -1,5 +1,6 @@
 package com.keyin;
 
+import com.keyin.services.VideoGameCatalog;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

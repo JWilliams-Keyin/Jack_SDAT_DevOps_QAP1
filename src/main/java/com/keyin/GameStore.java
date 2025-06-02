@@ -1,5 +1,10 @@
 package com.keyin;
 
+import com.keyin.models.Cart;
+import com.keyin.models.Purchase;
+import com.keyin.services.PurchaseService;
+import com.keyin.services.VideoGameCatalog;
+
 public class GameStore {
     public static void main(String[] args) {
         VideoGameCatalog gameCatalog = new VideoGameCatalog();
