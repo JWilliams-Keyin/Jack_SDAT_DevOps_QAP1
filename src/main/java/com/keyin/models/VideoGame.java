@@ -1,4 +1,4 @@
-package com.keyin;
+package com.keyin.models;
 
 public class VideoGame {
 

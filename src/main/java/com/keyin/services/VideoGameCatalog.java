@@ -1,4 +1,6 @@
-package com.keyin;
+package com.keyin.services;
+
+import com.keyin.models.VideoGame;
 
 import java.util.ArrayList;
 
@@ -6,7 +8,7 @@ public class VideoGameCatalog {
 
     // Attributes
 
-    ArrayList<VideoGame> availableGames;
+    public ArrayList<VideoGame> availableGames;
 
     // Constructor
 
