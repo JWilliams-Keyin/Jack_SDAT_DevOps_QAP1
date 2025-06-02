@@ -1,0 +1,37 @@
+1. Clean code practices were used all throughout the project.
+In particular, I made sure to have descriptive names, keep comments
+to a minimum (only using useful ones), and I made sure to keep my
+methods as short as possible. See screenshots of each example in the
+documentation folder.
+
+2. My project is a simple video game store. Here is a breakdown of how it works:
+
+VideoGame.java: A simple video game object that stores all of the data
+                related to each game in stock.
+
+Cart.Java: Handles adding and removing games from the user's cart, as
+           well as calculating the total price of all the games.
+
+Purchase.java: A simple object that stores the data of related to the
+               user's purchase. It holds all of the games they bought,
+               as well as the total price of those games.
+
+VideoGameCatalog.java: Holds the data of all available games that the
+                       store has to offer.
+
+PurchaseService.java: Handles the logic side of purchasing. It takes
+                      the data from the user's cart and gives back
+                      a purchase object with that data, while also
+                      clearing the cart.
+
+GameStore.java: The main file that shows all of the functionality of
+                the program.
+
+3. The dependency needed was JUnit 5. I got this dependency from one
+   of Jordan's repos, as the websites I found while googling didn't
+   have the latest version.
+
+4. The only problem I encountered during this QAP was my unexpectedly
+   busy schedule, so I just barely managed to pass this in on time.
+   I would have liked to add more features like a scanner based menu,
+   and mocking using Mockito in the tests.
