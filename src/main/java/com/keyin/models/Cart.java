@@ -1,5 +1,11 @@
 package com.keyin.models;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The Cart class handles all logic regarding adding
+*  and removing games from the user's cart, as well as calculating
+*  the total price of all games in the cart */
+
 import java.util.ArrayList;
 
 public class Cart {

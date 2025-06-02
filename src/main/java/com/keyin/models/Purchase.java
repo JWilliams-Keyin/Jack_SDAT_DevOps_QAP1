@@ -1,5 +1,10 @@
 package com.keyin.models;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The Purchase class is a simple object that holds
+*  data from a purchase that the user makes */
+
 import java.util.ArrayList;
 
 public class Purchase {

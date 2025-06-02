@@ -1,5 +1,10 @@
 package com.keyin;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The PurchaseServiceTest class tests the makePurchase
+*  method to make sure the purchase is successful */
+
 import com.keyin.models.Cart;
 import com.keyin.models.Purchase;
 import com.keyin.models.VideoGame;

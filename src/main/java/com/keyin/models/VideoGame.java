@@ -1,5 +1,12 @@
 package com.keyin.models;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The VideoGame class is an object that holds all
+*  data relating to the video games the store has in stock.
+*  The object includes the title, developer, release date, price,
+*  and genre of the game*/
+
 public class VideoGame {
 
     // Attributes

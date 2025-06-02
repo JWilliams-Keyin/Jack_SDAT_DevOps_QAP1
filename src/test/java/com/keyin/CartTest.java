@@ -1,5 +1,10 @@
 package com.keyin;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The CartTest class tests all of the methods that
+*  can be called from the Cart class */
+
 import com.keyin.models.Cart;
 import com.keyin.models.VideoGame;
 import org.junit.jupiter.api.*;

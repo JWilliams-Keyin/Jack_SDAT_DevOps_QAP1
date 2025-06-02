@@ -1,5 +1,10 @@
 package com.keyin.services;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The VideoGameCatalog class contains all of the games
+*  that the store has to offer */
+
 import com.keyin.models.VideoGame;
 
 import java.util.ArrayList;
