@@ -17,4 +17,21 @@ public class CartTest {
         assertEquals(1, cart1.gamesInCart.size());
         assertNotEquals(0, cart1.gamesInCart.size());
     }
+
+    @Test
+    public void testGameRemoval() {
+        Cart cart2 = new Cart();
+
+        VideoGame gameToRemove = new VideoGame("RemoveMe", "RemoveDev", "RemoveDate", 69.99, "RemoveGenre");
+        VideoGame newGame2 = new VideoGame("TestGame2", "TestDev", "TestDateAgain", 69.99, "TestGenreAgain");
+
+        cart2.addToCart(gameToRemove);
+        cart2.addToCart(newGame2);
+
+        cart2.removeFromCart(gameToRemove);
+
+        assertEquals(1, cart2.gamesInCart.size());
+        assertNotEquals(0, cart2.gamesInCart.size());
+        assertNotEquals(2, cart2.gamesInCart.size());
+    }
 }
