@@ -1,5 +1,10 @@
 package com.keyin;
 
+/* Author: Jack Williams
+*  Dates: May 26th - June 1st
+*  Description: The GameStore class is a demo class that shows all
+*  the functionality of the program when run */
+
 import com.keyin.models.Cart;
 import com.keyin.models.Purchase;
 import com.keyin.services.PurchaseService;
