@@ -24,10 +24,12 @@ public class Cart {
 
     public void addToCart(VideoGame videoGame){
         gamesInCart.add(videoGame);
+        System.out.println("Game added to cart!");
     }
 
     public void removeFromCart(VideoGame videoGame) {
         gamesInCart.remove(videoGame);
+        System.out.println("Game removed from cart!");
     }
 
     public double getTotalPrice() {
